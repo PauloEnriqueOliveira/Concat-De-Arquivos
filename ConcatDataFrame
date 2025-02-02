@@ -1,0 +1,11 @@
+import pandas as pd
+
+path1 = 'caminho do primeiro arquivo'
+path2 = 'caminho do segundo arquivo'
+
+df1 = pd.read_csv(path1)
+df2 = pd.read_csv(path2)
+
+df_conct = pd.concat([df1, df2], ignore_index=True)
+
+df_conct
